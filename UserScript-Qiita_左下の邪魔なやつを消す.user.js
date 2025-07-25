@@ -7,10 +7,14 @@
 // @match        https://qiita.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=qiita.com
 // @grant        none
-// @run-at document-idle
+// @run-at document-end
 // ==/UserScript==
 
 (function() {
     'use strict';
-    document.querySelector(".mainWrapper").childNodes[6].childNodes[0].style.display = "none";
+    // Your code here...
+    setTimeout(() => {
+        var popup = document.querySelector("div[data-testid]");
+    popup.style.display = "none";
+    }, 3000);
 })();
