@@ -11,7 +11,9 @@
 
 (function() {
     'use strict';
-    window.addEventListener('contextmenu', function(e) {
+
+var center = document.querySelector("iframe#center");
+center.addEventListener('contextmenu', function(e) {
 alert(e)
 }, false);
 })();
