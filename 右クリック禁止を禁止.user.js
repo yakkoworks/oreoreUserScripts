@@ -12,6 +12,6 @@
 (function() {
     'use strict';
     document.addEventListener('contextmenu', function(e) {
-  e.preventDefault(); // デフォルトのコンテキストメニューを抑制
+alert(e)
 }, false);
 })();
