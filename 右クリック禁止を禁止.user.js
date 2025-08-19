@@ -11,7 +11,8 @@
 
 (function() {
     'use strict';
-document.addEventListener('contextmenu', function(e) {
-alert(e)
+    document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+  alert(e)
 }, false);
 })();
